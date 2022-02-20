@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg_bikeshare_stations
+    columns:
+      - name: station_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_bikeshare_trips
+    columns:
+      - name: duration_minutes
+        tests: 
+          - not_null
