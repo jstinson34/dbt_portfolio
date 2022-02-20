@@ -4,11 +4,15 @@ models:
   - name: stg_bikeshare_stations
     columns:
       - name: station_id
+        description: Bikeshare station id
         tests:
           - unique
           - not_null
+      - name: station_name
+        description: Station name for starting location
   - name: stg_bikeshare_trips
     columns:
       - name: duration_minutes
+        description: Duration (minutes)
         tests: 
           - not_null
